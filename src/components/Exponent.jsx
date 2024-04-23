@@ -8,6 +8,7 @@ const Exponent = ({ num, exponent }) => (
     </p>
     <p className="exponent-result">
       {num} {` * ${num}`.repeat(num == 0 ? 0 : num - 1)} ={" "}
+      {/* {Array(exponent).fill(num).join(" * ")} ={" "} */}
       <span className="total">{Math.pow(num, exponent)}</span>
     </p>
   </div>
